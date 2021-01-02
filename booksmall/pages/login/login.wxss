@@ -1,0 +1,32 @@
+.input{
+  padding-left: 10px;
+  height: 44px;
+}
+
+.inputView{
+  border:  2px solid yellow;
+  border-radius: 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  z-index: 999;
+}
+
+.icon{
+  width: 350rpx;
+  height: 300rpx;
+  margin-left: 27%;
+  margin-top: 15%;
+  /* height: 400rpx; */
+}
+.all{
+  /* background-color: rgb(246, 246, 246); */
+  height: 1200rpx;
+  /* background-color: red; */
+  z-index: -999;
+}
+button{
+  background-color: red;
+  color: red;
+  margin-left: 30%;
+}

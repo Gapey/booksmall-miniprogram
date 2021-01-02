@@ -1,0 +1,64 @@
+{
+  "pages":[
+    "pages/discover/discover",
+    "pages/sell/sell",
+    "pages/mine/mine",
+    "pages/collect/collect",
+    "pages/submitOrder/submitOrder",
+    "pages/orderDetail/orderDetail",
+    "pages/history/history",
+    "pages/message/message",
+    "pages/myInfo/myInfo", 
+    "pages/index/index",
+    "pages/login/login",
+    "pages/cart/cart",
+    "pages/goodsDetail/goodsDetail",
+    "pages/search/search"
+  ],
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black" ,
+    "list": [
+    {
+      "selectedIconPath": "/images/黄主页.png",
+      "iconPath": "/images/黑主页.png",
+      "pagePath": "pages/discover/discover",
+      "text": "买书"
+    },
+    {
+      "selectedIconPath": "/images/黄购物车.png",
+      "iconPath": "/images/黑购物车.png",
+      "pagePath": "pages/cart/cart",
+      "text": "购物车"
+    },
+    {
+      "selectedIconPath": "/images/黄卖闲置.png",
+      "iconPath": "/images/卖闲置.png",
+      "pagePath": "pages/sell/sell",
+      "text": "卖闲置"
+    },
+    {
+      "selectedIconPath": "/images/黄消息.png",
+      "iconPath": "/images/黑消息.png",
+      "pagePath": "pages/message/message",
+      "text": "消息"
+    },
+    {
+      "selectedIconPath": "/images/黄书我的.png",
+      "iconPath": "/images/黑书我的.png",
+      "pagePath": "pages/mine/mine",
+      "text": "我的"
+    }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffff33",
+    "navigationBarTitleText": "校园二手书商城",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

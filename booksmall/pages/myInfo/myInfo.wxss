@@ -1,0 +1,130 @@
+.user_photo{
+  width: 150rpx;
+  height: 150rpx;
+}
+.user_simpleInfo{
+  height: 200rpx;
+  /* display: inline; */
+  display: flex;
+  white-space: nowrap;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  /* margin: 40rpx; */
+  padding: 40rpx;
+  background-color: #ffff33;
+  font-weight: 1000;
+  color: white;
+  /* border-top-left-radius:30px; */
+  /* //左上角 */
+  /* border-top-right-radius:30px; */
+  /* //右上角 */
+  border-bottom-left-radius:20px;
+  /* //右下角 */
+  border-bottom-right-radius:20px;
+  /* //左下角 */
+}
+.user_nickName{
+  height: 50rpx;
+  font-size: 20pt;
+  color: rgb(255, 79, 211);
+}
+.user_level{
+  height: 50rpx;
+  margin-top: 20rpx;
+  color: rgb(255, 79, 211);
+}
+.userText{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;  
+}
+.recentPlay{
+  width: 80%;
+  margin-left: 6%;
+  margin-top: 6%;
+  background-color: tomato;
+  padding: 5%;
+  border-top-left-radius:20px;
+  /* //左上角 */
+  border-top-right-radius:20px;
+  /* //右上角 */
+  border-bottom-left-radius:20px;
+  /* //右下角 */
+  border-bottom-right-radius:20px;
+  /* //左下角 */
+}
+.collectList{
+  width: 80%;
+  margin-left: 6%;
+  margin-top: 6%;
+  background-color: tomato;
+  padding: 5%;
+  border-top-left-radius:20px;
+  /* //左上角 */
+  border-top-right-radius:20px;
+  /* //右上角 */
+  border-bottom-left-radius:20px;
+  /* //右下角 */
+  border-bottom-right-radius:20px;
+  /* //左下角 */
+}
+.infoBtn{
+  margin-left: 80%;
+  /* float: right; */
+  float: inline-end;
+}
+.myInfo{
+  /* display: inline; */
+  /* justify-content: space-around; */
+  justify-content: space-around;
+  /* display: flex; */
+}
+.input{
+  background-color: transparent;
+  border: none;
+  /* border-bottom: 2px solid red; */
+  border-bottom: 2px solid gray;
+  outline: none;
+  padding-bottom: 10px;
+  text-align: right;
+  width: 60%;
+  font-size: 100%;
+  /* color: red; */
+  color: black;
+  font-weight: 100;
+  right: 0;
+  position: relative;
+  right: 0;
+  top: 0;
+  /* float: right; */
+  /* margin-right: 10rpx; */
+}
+.infoText{
+  font-size: 30rpx;
+  font-weight: 800;
+  /* color: red; */
+  color: black;
+  width: 20%;
+  /* float: left; */
+}
+.sno{
+  /* display: inline; */
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+.updateBtn{
+  background-color: #ffff33;
+  color: rgb(255, 79, 211);
+  margin-top: 10%;
+  margin-left: 40%;
+}
+.infoTitle{
+  font-size: 30rpx;
+  font-weight: 800;
+  color: gray;
+  margin-left: 40%;
+  margin-top: 5%;
+}

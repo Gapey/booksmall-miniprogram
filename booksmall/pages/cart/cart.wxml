@@ -1,0 +1,40 @@
+<view class="all">
+  <view class="topBar">
+    <text class="title">我的购物车车^v^</text>
+    <!-- <button class="buyBtn" size="mini">我卖的</button>
+  <button class="buyBtn" size="mini">我买的</button> -->
+  </view>
+  <view class="goodsBox">
+    <!-- <scroll-view scroll-x="true"> -->
+    <view class="goods" wx:for="{{goodslist}}">
+      <view class="sellerName">卖家名称</view>
+      <view class="goodsInfo">
+        <image class="goodsPicture" src="http://119.29.28.23:8888/img?img={{item.pic}}" mode="scaleToFill"></image>
+        <view class="goodsDiscriptionBox">
+          <text class="goodsDiscription">{{item.name}}</text>
+          <text class="goodsPrice">¥{{item.price}}</text>
+          <text class="goodsNum">
+            购买数量</text>
+          <!-- 主容器 -->
+          <view class="stepper">
+            <!-- 减号 -->
+            <view class="minus" bindtap="update" data-id="-" data-goodsid="{{item.goodsid}}" data-num="{{item.number}}">
+              -
+            </view>
+            <!-- 数值 -->
+            <input type="number" bindchange="bindManual" value="{{item.number}}" />
+            <!-- 加号 -->
+            <view class="add" bindtap="update" data-id="+" data-goodsid="{{item.goodsid}}" data-num="{{item.number}}">+
+            </view>
+          </view>
+          <!-- <button bindtap="del" data-id="{{item.goodsid}}">删除</button> -->
+          <image class="deleteBtn" bindtap="del" src="/images/删除.png" data-id="{{item.goodsid}}"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="bottomBar">
+    <text class="titlePrice">总价：¥{{allprice}}</text>
+    <button class="buyBtn" size="mini" bindtap="finish">结算</button>
+  </view>
+</view>

@@ -1,0 +1,112 @@
+.all{
+  /* white-space: nowrap; */
+  /* align-items: center; */
+  background-color: rgba(233, 229, 229, 0.911);
+}
+.songListInfo{
+  /* height: 200rpx; */
+  height: 200rpx;
+  /* display: inline; */
+  display: flex;
+  white-space: nowrap;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  /* margin: 40rpx; */
+  padding: 40rpx;
+  /* background-color: #ffff33; */
+  background-color: white;
+  font-weight: 1000;
+  color: black;
+  /* align-items: center; */
+}
+.songListPoster{
+  width: 250rpx;
+    height: 200rpx;
+    border-radius: 10px;
+  
+}
+.songListText{
+  align-items: flex-start;
+  height: 150rpx;
+  width: 560rpx;
+  margin-left: 40rpx;
+  /* white-space: pre-wrap; */
+  /* flex-direction: column; */
+}
+.songListName{
+  font-size: 15pt;
+}
+.songListOwner{
+  font-size: 10pt;
+}
+.songListDiscription{
+  font-size: 1pt;
+  /* white-space: pre-wrap; */
+}
+.songList{
+  width: 85%;
+  margin-left: 6%;
+  margin-top: 7%;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 6%;
+  background-color: white;
+  
+  /* align-items: center; */
+  border-top-left-radius:10px;
+  /* //左上角 */
+  border-top-right-radius:10px;
+  /* //右上角 */
+  /* border-bottom-left-radius:30px; */
+  /* //右下角 */
+  /* border-bottom-right-radius:30px; */
+  /* //左下角 */
+}
+.songItem{
+  /* line-height: 30rpx; */
+  margin-top: 20rpx;
+}
+.songName{
+  font-weight: 900;
+}
+.songListDescriptionBox{
+  height: 100rpx;
+  font-weight: 200;
+  font-size: 8pt;
+  width: fit-content;
+  white-space: pre-wrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.goodsPicture{
+  width: 600rpx;
+}
+
+.bottomBar{
+  float: bottom;
+  position:fixed; 
+  bottom:0;
+  width: 100%;
+  background-color: white;
+  padding-top: 3%;
+}
+.buyBtn{
+  float: right;
+  /* background-color: #ffff33; */
+  /* color: rgb(255, 79, 211); */
+  margin-right: 40rpx;
+  margin-bottom: 30rpx;
+
+  background-color: #ffff33;
+  color: rgb(255, 79, 211);
+  border-radius: 30px;
+  border: none; 
+  /* width: 80%; */
+}
+.titlePrice{
+  margin-left: 40rpx;
+  font-weight: 800;
+  font-size: 38rpx;
+  margin-top: 20rpx;
+}

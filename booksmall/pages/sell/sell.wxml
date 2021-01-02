@@ -1,0 +1,60 @@
+<view class="topBar">
+  <text class="title">卖闲置^v^</text>
+  <!-- <button class="buyBtn" size="mini">我卖的</button>
+  <button class="buyBtn" size="mini">我买的</button> -->
+</view>
+<view class="myInfo">
+  <!-- <view class="infoTitle">卖闲置</view> -->
+  <view class="sno">
+    <view class="infoText">商品名称:</view>
+    <input type="text" class="input" placeholder="请输入商品名称" bindinput="inputgoodsname" value="{{goodsname}}" />
+  </view>
+  <view class="sno">
+    <view class="infoText">商品描述:</view>
+    <input type="text" class="input" placeholder="请简单描述你的商品" bindinput="inputgoodtext" value="{{goodtext}}" />
+  </view>
+  <view class="sno">
+    <view class="infoText">价格:</view>
+    <input type="text" class="input" placeholder="请输入你的价格" bindinput="inputprice" value="{{price}}" />
+  </view>
+  <view class="sno">
+    <view class="infoText">商品类别:</view>
+
+    <!-- 下拉框 -->
+    <view class='select_box'>
+      <view class='select' catchtap='selectTap'>
+        <text class='select_text'>{{selectData[index]}}</text>
+        <!-- <image class='words_img' src='../../images/dv.png'></image>
+        <image class='select_img {{show&&"select_img_rotate"}}' src='/image/gobottom.png'></image> -->
+      </view>
+      <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this'
+          data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+      </view>
+    </view>
+  </view>
+
+
+
+
+
+
+
+
+
+  <view class="pictureTitle">图片上传</view>
+  <view class="demo-box">
+    <view class="img-box" wx:if="{{list!=[]}}" wx:for="{{list}}" wx:key="*this">
+      <!-- <block wx:if="{{list!=[]}}" wx:for="{{list}}" wx:key="*this"> -->
+        <button class="deleteBtn" bindtap="delete" data-id="{{index}}">x</button>
+        <image class="uploadPicture" src="http://119.29.28.23:8888/img?img={{item}}" mode="widthFix"></image>
+      <!-- </block> -->
+    </view>
+    <button class="uploadBtn" bindtap="chooseImage">开始上传</button>
+    <progress percent="{{percent}}" activeColor="pink" active show-info></progress>
+  </view>
+
+
+
+</view>
+<button class="updateBtn"  bindtap="confirmUpdate">提交</button>

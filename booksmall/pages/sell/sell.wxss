@@ -1,0 +1,305 @@
+/* 字体封装 */
+@font-face {
+  font-family: "blod";
+  src: url('https://static.heytea.com/taro_trial/v1/font/WenYue-XinQingNianTi-NC-W8_1.otf');
+}
+/* END */
+.topBar{
+  position:fixed; 
+  top:0;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+
+  font-family: 'blod';
+  /* font-size: 65rpx; */
+  padding-top: 20rpx;
+}
+.title{
+  margin-left: 280rpx;
+  font-weight: 800;
+  font-size: 55rpx;
+  margin-top: 20rpx;
+}
+.myInfo{
+  /* display: inline; */
+  /* justify-content: space-around; */
+  justify-content: space-around;
+  margin-top: 120rpx;
+  /* display: flex; */
+}
+.input{
+  background-color: transparent;
+  border: none;
+  /* border-bottom: 2px solid red; */
+  border-bottom: 2px solid gray;
+  outline: none;
+  padding-bottom: 10px;
+  text-align: right;
+  width: 60%;
+  font-size: 100%;
+  /* color: red; */
+  color: black;
+  font-weight: 100;
+  right: 0;
+  position: relative;
+  right: 0;
+  top: 0;
+  /* float: right; */
+  /* margin-right: 10rpx; */
+}
+.infoText{
+  font-size: 30rpx;
+  font-weight: 800;
+  /* color: red; */
+  color: black;
+  width: 20%;
+  /* float: left; */
+  /* margin-left: 1%; */
+  margin-top: 3%;
+}
+.sno{
+  /* display: inline; */
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+.updateBtn{
+  margin-top: 10%;
+  margin-left: 40%;
+  background-color: #ffff33;
+  color: rgb(255, 79, 211);
+  border-radius: 30px;
+  border: none; 
+  width: 80%;
+}
+.infoTitle{
+  font-size: 30rpx;
+  font-weight: 800;
+  color: gray;
+  margin-left: 40%;
+  margin-top: 5%;
+}
+
+.pictureTitle{
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: bold;
+  margin:10rpx;
+  padding: 10rpx;
+}
+
+.demo-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height:30vh;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  border: 2rpx solid darkred;
+  margin: 20rpx auto;
+}
+/* button{
+  margin: 10rpx;
+} */
+progress{
+  width: 90%;
+}
+.img-box{
+  display: flex;
+  flex-direction: row;
+  /* width:100%; */
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap:wrap;
+  padding-top: 5%;
+  width: 33.3%;
+  /* height: 400rpx; */
+  height: auto;
+  position: relative;
+}
+.uploadPicture{
+  /* width: 33.3%; */
+  width: 100%;
+  height: 400rpx;
+  /* position: absolute; */
+  top: 5%;
+}
+
+.uploadBtn{
+  background-color: #ffff33;
+  /* color: rgb(255, 79, 211); */
+  color: white;
+  width: 80% !important;
+  border-radius: 30px;
+  border: none; 
+  /* 渐变色 */
+  background: linear-gradient(to right, #fcff67, #ff4492);
+}
+
+
+/* 选择下拉框 */
+.select-box {
+  position: relative;
+  width: 100%;
+  font-size: 30rpx;
+}
+
+.select-current {
+  position: relative;
+  width: 100%;
+  padding: 0 10rpx;
+  line-height: 70rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 6rpx;
+  box-sizing: border-box;
+}
+
+.select-current::after {
+  position: absolute;
+  display: block;
+  right: 16rpx;
+  top: 30rpx;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10rpx solid transparent;
+  border-top: 10rpx solid #999;
+}
+
+.current-name {
+  display: block;
+  width: 85%;
+  height: 100%;
+  word-wrap: normal;
+  overflow: hidden;
+}
+
+.option-list {
+  position: absolute;
+  left: 0;
+  top: 76rpx;
+  width: 100%;
+  padding: 12rpx 20rpx 10rpx 20rpx;
+  border-radius: 6rpx;
+  box-sizing: border-box;
+  z-index: 99;
+  box-shadow: 0rpx 0rpx 1rpx 1rpx rgba(0, 0, 0, 0.2) inset;
+  background-color: #fff;
+}
+
+.option {
+  display: block;
+  width: 100%;
+  line-height: 70rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.option:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+
+.select_box {
+  background: #fff;
+  width: 420rpx;
+  /* margin: 0 auto; */
+  /* margin-top: 40rpx; */
+  height: 86rpx;
+  line-height: 86rpx;
+  text-align: left;
+  position: relative;
+  z-index: 999;
+}
+
+.select {
+  box-sizing: border-box;
+  width: 100%;
+  height: 86rpx;
+  border: 1px solid #efefef;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+
+.select_text {
+  white-space: nowrap;
+  font-size: 28rpx;
+  flex: 1;
+  color: rgb(102, 102, 102);
+  line-height: 86rpx;
+  height: 86rpx;
+}
+
+.select_img {
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.select_img_rotate {
+  transform: rotate(180deg);
+}
+
+.option_box {
+  position: absolute;
+  top: 86rpx;
+  width: 100%;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+}
+
+.option {
+  display: block;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx;
+  color: rgb(102, 102, 102);
+  font-size: 28rpx;
+}
+
+
+/* 按钮样式 */
+
+/* button::after{
+  border:none;
+  }
+  input{
+  outline:none;
+  border:none;
+  list-style: none;
+  } */
+.deleteBtn{
+  /* display: flex; */
+  width: 40rpx !important;
+  /* height: 40rpx; */
+  padding: 0%;
+  /* float: right; */
+  margin-left: 0% !important;
+  margin-right: 0% !important;
+  /* position: relative; */
+  /* top: 0%; */
+  /* bottom: 10%; */
+  /* margin-bottom: 30%; */
+  /* left: 35%; */
+  z-index: 888;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  /* margin-bottom: 10; */
+}
+
+.sellerName{
+  width: 100%;
+}

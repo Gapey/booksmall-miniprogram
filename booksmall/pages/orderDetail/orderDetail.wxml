@@ -1,0 +1,35 @@
+<view class="topBar">
+  <text class="title">订单详情</text>
+</view>
+<view class="buyerInfoBox">
+  <image class="buyerPicture" src="/images/雪乃.png">买家头像</image>
+  <view class="buyerTextBox">
+    <text class="buyerName">
+      买家昵称</text>
+    <text class="buyerId">
+      买家ID</text>
+    <text class="buyerPhone">
+      买家手机</text>
+
+    <input class="buyerAddress" placeholder="请输入地址" />
+  </view>
+</view>
+<view class="goodsBox">
+  <!-- 这里用一个条件渲染，判断数据库中的订单是买入的还是卖出的，再用条件渲染显示出来 -->
+  <!-- <scroll-view scroll-x="true"> -->
+  <view class="goods" bindtap="rankToSongList">
+    <image class="goodsPicture" src="/images/书本01.png" mode="scaleToFill"></image>
+    <view class="goodsDiscriptionBox">
+      <text class="goodsDiscription">商品名称</text>
+      <text class="goodsPrice">¥34324343</text>
+      <text class="goodsNum">
+        购买数量：</text>
+      <text class="goodsOwner">
+        商品发布者</text>
+    </view>
+  </view>
+</view>
+<view class="bottomBar">
+  <text class="titlePrice">总价：¥商品价格</text>
+  <!-- <button class="buyBtn" size="mini">结算</button> -->
+</view>

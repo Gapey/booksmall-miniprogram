@@ -1,0 +1,70 @@
+<view class="all">
+  <view class='search-area'>
+    <input class='search-input' type='text' placeholder="商品名称" bindinput='input'></input>
+    <image class='search-icon' src="/images/查找.png" mode='widthFix' bindtap="search"></image>
+  </view>
+
+  <!-- 顶部类别栏 -->
+  <view class="goodsClassBox">
+
+    <!-- 
+      渲染块
+    <view class="goodsClass" wx:for="{{goodsCLass}}" bindtap="discoverToGoodsDetail" data-ranklistid="{{item.id}}">
+      <image class="songListPicture" src="{{item.coverImgUrl}}"></image>
+     此处的url为字典形式封装的，所以数据对接时要注意 
+      <view class="goodsDiscriptionBox">
+        <text class="goodsDiscription">第一个{{item.name}}</text>
+      </view>
+    </view> -->
+    <view class="goodsCLass1" style="width: 120rpx;height: 224rpx;" wx:for="{{cate}}" data-id="{{item.id}}" bindtap="cate">
+      <image class="goodsClassPicture" src="{{item.pic}}"></image>
+      <view class="goodsClassDiscription">{{item.name}}</view>
+    </view>
+  </view>
+
+
+  <!-- 
+  可扩展：轮播图
+  <swiper indicator-dots autoplay interval='6000' duration='3000'>
+    <swiper-item wx:for="{{banners}}">
+      <image src="{{item.imageUrl}}" class="swiper-item"></image>
+    </swiper-item>
+
+  <swiper-item>
+      <image src="" class="swiper-item">第二张图</image>
+    </swiper-item>
+    <swiper-item>
+      <image src="" class="swiper-item">第三张图</image>
+    </swiper-item>
+  </swiper> 
+  -->
+
+
+  <view class="goodsTitleBox">
+    <text class="goodsTitle">商品广场</text>
+  </view>
+
+  <view class="goodsBox">
+    <!-- <scroll-view scroll-x="true"> -->
+    <!-- <view class="goods" bindtap="rankToSongList">
+      <image class="goodsPicture" src="/images/书本01.png" mode="scaleToFill"></image>
+      <view class="goodsDiscriptionBox">
+        <text class="goodsDiscription">
+          商品名称</text>
+        <text class="goodsPrice">
+          ¥商品价格</text>
+        <text class="goodsOwner">
+          商品发布者</text>
+      </view>
+    </view> -->
+
+    <view class="goods" wx:for="{{list}}" bindtap="togoods" data-id="{{item.id}}">
+      <image class="goodsPicture" src="http://119.29.28.23:8888/img?img={{item.pic}}" mode="scaleToFill"></image>
+      <view class="goodsDiscriptionBox">
+        <text class="goodsDiscription">{{item.name}}\n</text>
+        <text class="goodsPrice">{{item.price}}\n</text>
+        <text class="goodsOwner">{{item.username}}\n</text>
+      </view>
+    </view>
+  </view>
+</view>

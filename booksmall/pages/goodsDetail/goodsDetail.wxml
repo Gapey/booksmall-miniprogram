@@ -1,0 +1,26 @@
+<view class="all">
+  <view class="songListInfo">
+    <image src="{{head}}" class="songListPoster"></image>
+    <view class="songListText">
+      <text class="songListName">{{username}}
+      </text>
+
+      <view class="songListDescriptionBox">
+        <!-- <text class="songListDescription">{{text}}
+        </text> -->
+      </view>
+    </view>
+  </view>
+
+  <view class="songList">
+    <text class="singerName">{{text}}</text>
+    <view class="songItem" wx:for="{{list}}">
+      <!-- <text class="songIndex">1</text> -->
+      <image class="goodsPicture" src="http://119.29.28.23:8888/img?img={{item}}">商品图片</image>
+    </view>
+  </view>
+</view>
+<view class="bottomBar">
+  <text class="titlePrice">¥{{price}}</text>
+  <button class="buyBtn" size="mini" bindtap="addcart">加入购物车</button>
+</view>

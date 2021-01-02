@@ -1,0 +1,15 @@
+<view class="all">
+  <image class="icon" src="/images//信管二手书图标2.png"></image>
+  <view class="inputView" >
+    <input class="input" type="number" placeholder="请输入账号" placeholder-style="color: gray"
+      bindinput="inputSno" />
+  </view>
+  <view class="inputView">
+    <input class="input" password="true" placeholder="请输入密码" placeholder-style="color: gray"
+      bindinput="inputSpw" />
+  </view>
+  <button style="margin-left: 180rpx; margin-right: 15rpx; margin-top: 50rpx; border-radius: 40rpx;background-color:yellow; color:white" type="primary"
+    bindtap="regist">注册</button>
+  <button style="margin-left: 180rpx; margin-right: 15rpx; margin-top: 50rpx; border-radius: 40rpx;background-color:yellow;" type="primary"
+    bindtap="login">登录</button>
+</view>

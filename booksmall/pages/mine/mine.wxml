@@ -1,0 +1,32 @@
+<view class="user">
+  <view class="user_simpleInfo">
+    <image class="user_photo" src="{{avatarUrl}}"></image>
+    <view class="userText" >
+      <view class="user_nickName">{{name}}</view>
+      <button bindtap="login" open-type="getUserInfo" wx:if="{{!state}}">登录</button>
+    </view>
+  </view>
+  <navigator url="/pages/myInfo/myInfo" class="collectList">修改信息</navigator>
+  <navigator url="/pages/collect/collect" class="collectList">我的闲置</navigator>
+  <navigator url="/pages/history/history" class="collectList">历史订单</navigator>
+  <view class="myConcern">我关注的用户</view>
+  <view class="concernMe">关注我的用户</view>
+  
+  <!-- <view class="recentPlay">最近播放
+    <scroll-view scroll-y >
+      <view class="scroll-item-y" wx:for="{{recentList}}">
+        {{item.songname}}--{{item.author}}</view>
+      <view class="scroll-item-y">第二个</view>
+      <view class="scroll-item-y">第三个</view>
+    </scroll-view>
+  </view> -->
+  
+  <!-- <view class="collectList">收藏歌单
+    <scroll-view scroll-y>
+      <view class="scroll-item-y" wx:for="{{collectList}}">{{item.songname}}--{{item.author}}</view>
+      <view class="scroll-item-y">第二个</view>
+      <view class="scroll-item-y">第三个</view>
+    </scroll-view>
+  </view> -->
+
+</view>

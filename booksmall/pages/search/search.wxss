@@ -1,0 +1,336 @@
+.all {
+  background-color: rgb(241, 241, 241);
+  min-height: 100vh;
+}
+
+.search-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+  padding: 10rpx;
+  background-color: #ffff33;
+}
+
+.search-input {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+  background-color: #fff;
+  border-radius: 15rpx;
+  color: #999;
+}
+
+.search-icon {
+  width: 65rpx;
+  margin: 15rpx;
+}
+
+.swiper-item {
+  height: 300rpx;
+  line-height: 300rpx;
+  background-color: #ff0000;
+  /* fonr-size: 30pt; */
+  margin: 20rpx;
+  margin-left: 60rpx;
+  border-top-left-radius: 30px;
+  /* 左上角 */
+  border-top-right-radius: 30px;
+  /* 右上角 */
+  border-bottom-left-radius: 30px;
+  /* 右下角 */
+  border-bottom-right-radius: 30px;
+  /* 左下角  */
+}
+
+swiper {
+  height: 300rpx;
+  border-top-left-radius: 30px;
+  /* //左上角 */
+  border-top-right-radius: 30px;
+  /* //右上角 */
+  border-bottom-left-radius: 30px;
+  /* //右下角 */
+  border-bottom-right-radius: 30px;
+  /* //左下角 */
+}
+
+scroll-view {
+  width: 100%;
+  height: 360rpx;
+  margin: 10rpx;
+  /* display: inline; */
+  /* white-space: nowrap; */
+  /* align-content: flex-end; */
+  /* justify-content: space-around; */
+}
+
+.scroll-item-x {
+  width: 30%;
+  /* width: 230rpx; */
+  /* height: 330rpx; */
+  height: 360rpx;
+  /* line-height: 350rpx; */
+  font-size: 10pt;
+  /* background-color: lightcoral; */
+  /* display: inline-block; */
+
+  display: block;
+  margin-left: 15rpx;
+  margin-right: 5rpx;
+  margin-top: 15rpx;
+  /* justify-content: space-around; */
+  /* bottom: 0%; */
+  /* position:fixed; */
+  /* position: relative; */
+  /* top:0; */
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+
+  /* align-content: flex-start; */
+  /* display: flex; */
+  /* display: block; */
+  /* display:inline; */
+}
+
+.goodsClassPicture {
+  /* width: 180rpx; */
+  width: 100%;
+  /* height: 180rpx; */
+  height: 150rpx;
+  /* margin: 20rpx; */
+  /* flex-direction: column-reverse; */
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.goodsClassDiscription {
+  /* height: 60rpx; */
+  /* width: 100%;  */
+  /* width: auto; */
+  /* width: 223rpx; */
+  /* height: 104rpx; */
+  /* height: 100%; */
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  white-space: normal;
+  /* margin-left: 20rpx; */
+  /* background-color: blue; */
+  /* flex-direction: column; */
+  /* display: block; */
+  /* display: flexbox; */
+  /* display:inline; */
+}
+
+/* 
+.songListDiscriptionBox{
+  display: inline;
+  flex-direction: column;
+}  */
+
+.songList {
+  width: 100%;
+  /* height: 50%; */
+  /* height: 360rpx; */
+  white-space: nowrap;
+  /* align-content: flex-end; */
+}
+
+.goodsTitle {
+  font-weight: 800;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+
+.goodsTitleBox {
+  margin-top: 30rpx;
+  background-color: rgb(241, 241, 241);
+}
+
+.rankList {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.goods {
+  width: 30%;
+  /* width: 230rpx; */
+  /* height: 330rpx; */
+  height: 74rpx;
+  /* line-height: 350rpx; */
+  font-size: 10pt;
+  /* background-color: lightcoral; */
+  display: inline-block;
+  /* display: block; */
+  margin-left: 15rpx;
+  margin-right: 5rpx;
+  margin-top: 15rpx;
+  /* justify-content: space-around; */
+  /* bottom: 0%; */
+  /* position:fixed; */
+  /* position: relative; */
+  /* top:0; */
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+
+  /* align-content: flex-start; */
+  /* display: flex; */
+  /* display: block; */
+  /* display:inline; */
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.goodsClass1 {
+  width: 120rpx;
+  height: 224rpx;
+  box-shadow: 1px 1px 13px 3px #FFEB3B;
+}
+
+.goodsClass2 {
+  box-shadow: 1px 1px 13px 3px #FFEB3B;
+  width: 120rpx;
+  height: 224rpx;
+}
+
+.goodsClass3 {
+  box-shadow: 1px 1px 13px 3px #FFEB3B;
+  width: 120rpx;
+  height: 224rpx;
+}
+
+.goodsClass4 {
+  box-shadow: 1px 1px 13px 3px #FFEB3B;
+  width: 120rpx;
+  height: 224rpx;
+}
+
+.goodsClass5 {
+  box-shadow: 1px 1px 13px 3px #FFEB3B;
+  width: 120rpx;
+  height: 224rpx;
+}
+
+.goodsClass6 {
+  box-shadow: 1px 1px 13px 3px #FFEB3B;
+  width: 120rpx;
+  height: 224rpx;
+}
+
+.goodsClass7 {
+  box-shadow: 1px 1px 13px 3px #FFEB3B;
+  width: 120rpx;
+  height: 224rpx;
+}
+
+.goodsClass8 {
+  box-shadow: 1px 1px 13px 3px #FFEB3B;
+  width: 120rpx;
+  height: 224rpx;
+}
+
+.goodsClass9 {
+  box-shadow: 1px 1px 13px 3px #FFEB3B;
+  width: 120rpx;
+  height: 224rpx;
+}
+
+.goodsClassBox {
+  width: 80%;
+  /* line-height: 350rpx; */
+  font-size: 10pt;
+  /* background-color: lightcoral; */
+  /* display: inline-block; */
+  /* display: block; */
+  display: flex;
+  margin-left: 60rpx;
+  margin-top: 30rpx;
+  flex-wrap: wrap;
+}
+
+.goodsBox {
+  background-color: rgb(241, 241, 241);
+}
+
+.goods {
+  background-color: white;
+  width: 30%;
+  /* width: 230rpx; */
+  /* height: 330rpx; */
+
+  /* height: 360rpx; */
+  /* height: auto; */
+  height: 350rpx;
+
+  /* line-height: 350rpx; */
+  font-size: 10pt;
+  /* background-color: lightcoral; */
+  display: inline-block;
+  /* display: block; */
+  margin-left: 15rpx;
+  margin-right: 5rpx;
+  margin-top: 15rpx;
+  border-radius: 15px;
+}
+
+.goodsPicture {
+  /* width: 180rpx; */
+  width: 100%;
+  /* height: 180rpx; */
+  height: 224rpx;
+  /* margin: 20rpx; */
+  /* flex-direction: column-reverse; */
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 15px;
+}
+
+.goodsDiscription {
+  /* width: 223rpx; */
+  /* height: 74rpx; */
+  /* text-align: center; */
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  /* white-space: normal; */
+  /* font-size: 30 rpx; */
+  /* word-break: break-all; */
+  /*允许在单词内换行*/
+  /* text-align: left; */
+  /* color: #323232; */
+  /* line-height: 45 rpx; */
+  /* text-overflow: -o-ellipsis-lastline; */
+  /*css3中webkit内核提供的一个方法类似 ellipsis*/
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  display: -webkit-box;
+  /*自适应盒子*/
+  -webkit-line-clamp: 2;
+  /*此处为1行,如果是两行就改成2*/
+  -webkit-box-orient: vertical;
+}
+
+
+.goodsPrice {
+  color: #ffb000;
+  font-size: 12pt;
+  text-shadow: 0 0 1px black;
+}
+
+.goodsOwner {
+  color: #0000005e;
+  text-shadow: 0 0 2px #0000003d;
+}

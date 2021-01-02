@@ -1,0 +1,142 @@
+.user_photo {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.user_simpleInfo {
+  height: 200rpx;
+  /* display: inline; */
+  display: flex;
+  white-space: nowrap;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  /* margin: 40rpx; */
+  padding: 40rpx;
+  background-color: #ffff33;
+  font-weight: 1000;
+  color: white;
+  /* border-top-left-radius:30px; */
+  /* //左上角 */
+  /* border-top-right-radius:30px; */
+  /* //右上角 */
+  border-bottom-left-radius: 20px;
+  /* //右下角 */
+  border-bottom-right-radius: 20px;
+  /* //左下角 */
+}
+
+.user_nickName {
+  height: 50rpx;
+  font-size: 20pt;
+  color: rgb(255, 79, 211);
+}
+
+.user_level {
+  height: 50rpx;
+  margin-top: 20rpx;
+  color: rgb(255, 79, 211);
+}
+
+.userText {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+}
+
+.recentPlay {
+  width: 80%;
+  margin-left: 6%;
+  margin-top: 6%;
+  background-color: tomato;
+  padding: 5%;
+  border-top-left-radius: 20px;
+  /* //左上角 */
+  border-top-right-radius: 20px;
+  /* //右上角 */
+  border-bottom-left-radius: 20px;
+  /* //右下角 */
+  border-bottom-right-radius: 20px;
+  /* //左下角 */
+}
+
+.collectList {
+  width: 80%;
+  margin-left: 6%;
+  margin-top: 6%;
+  background-color: #ffff33;
+  padding: 5%;
+  border-top-left-radius: 20px;
+  /* //左上角 */
+  border-top-right-radius: 20px;
+  /* //右上角 */
+  border-bottom-left-radius: 20px;
+  /* //右下角 */
+  border-bottom-right-radius: 20px;
+  /* //左下角 */
+
+  font-weight: 800;
+  color: rgb(255, 79, 211);
+  
+
+}
+
+.history {
+  width: 80%;
+  margin-left: 6%;
+  margin-top: 6%;
+  background-color: #ffff33;
+  padding: 5%;
+  border-top-left-radius: 20px;
+  /* //左上角 */
+  border-top-right-radius: 20px;
+  /* //右上角 */
+  border-bottom-left-radius: 20px;
+  /* //右下角 */
+  border-bottom-right-radius: 20px;
+  /* //左下角 */
+  font-weight: 800;
+  color: rgb(255, 79, 211);
+}
+
+.myConcern {
+  width: 80%;
+  margin-left: 6%;
+  margin-top: 6%;
+  background-color: #ffff33;
+  padding: 5%;
+  border-top-left-radius: 20px;
+  /* //左上角 */
+  border-top-right-radius: 20px;
+  /* //右上角 */
+  border-bottom-left-radius: 20px;
+  /* //右下角 */
+  border-bottom-right-radius: 20px;
+  /* //左下角 */
+  font-weight: 800;
+  color: rgb(255, 79, 211);
+}
+
+.concernMe {
+  width: 80%;
+  margin-left: 6%;
+  margin-top: 6%;
+  background-color: #ffff33;
+  padding: 5%;
+  border-top-left-radius: 20px;
+  /* //左上角 */
+  border-top-right-radius: 20px;
+  /* //右上角 */
+  border-bottom-left-radius: 20px;
+  /* //右下角 */
+  border-bottom-right-radius: 20px;
+  /* //左下角 */
+  font-weight: 800;
+  color: rgb(255, 79, 211);
+}
+
+.infoBtn {
+  margin-left: 80%;
+  /* float: right; */
+  float: inline-end;
+}

@@ -1,0 +1,26 @@
+<view class="all">
+  <view class="topBar">
+    <text class="title">我的历史订单</text>
+    <button class="buyBtn" size="mini" bindtap="sell">我卖的</button>
+    <button class="buyBtn" size="mini" bindtap="buy">我买的</button>
+  </view>
+  <view class="bar"></view>
+  <view class="historyList">
+    <view class="goodsBox" wx:for="{{list}}">
+      <!-- 这里用一个条件渲染，判断数据库中的订单是买入的还是卖出的，再用条件渲染显示出来 -->
+      <!-- <scroll-view scroll-x="true"> -->
+
+      <view class="goods" bindtap="rankToSongList">
+        <image class="goodsPicture" src="http://119.29.28.23:8888/img?img={{item.pic}}" mode="scaleToFill"></image>
+        <view class="goodsDiscriptionBox">
+          <text class="goodsDiscription">{{item.name}}</text>
+          <text class="goodsPrice">¥{{item.price}}</text>
+          <text class="goodsOwner">
+            备注{{item.remark}}</text>
+        </view>
+      </view>
+
+
+    </view>
+  </view>
+</view>

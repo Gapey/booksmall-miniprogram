@@ -1,0 +1,175 @@
+.all {
+  background-color: rgb(241, 241, 241);
+  /* background-color: gray; */
+  min-height: 100vh;
+}
+
+.goods {
+  width: 90%;
+  /* width: 230rpx; */
+  /* height: 330rpx; */
+  /* height: 360rpx; */
+  /* line-height: 350rpx; */
+  font-size: 10pt;
+  /* background-color: lightcoral; */
+  /* display: inline-block; */
+  display: flex;
+  /* display: block; */
+  margin-left: 40rpx;
+  /* margin-right: 5rpx; */
+  margin-top: 15rpx;
+  /* border: greenyellow 10px; */
+  /* background-color: #fafab2; */
+  padding: 1%;
+}
+
+.goodsPicture {
+  /* width: 180rpx; */
+  width: 224rpx;
+  /* height: 180rpx; */
+  height: 224rpx;
+  /* margin: 20rpx; */
+  /* flex-direction: column-reverse; */
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 15px;
+}
+
+text .goodsDiscription {
+  /* height: 60rpx; */
+  /* width: 100%;  */
+  /* width: auto; */
+  width: 223rpx;
+  height: 104rpx;
+  /* height: 100%; */
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  white-space: normal;
+  /* margin-left: 20rpx; */
+  /* background-color: blue; */
+  /* flex-direction: column; */
+  /* display: block; */
+  /* display: flexbox; */
+  /* display:inline; */
+}
+
+.goodsPrice {
+  color: #ffb000;
+  font-size: 12pt;
+  text-shadow: 0 0 1px black;
+  /* text-align: right; */
+  float: right;
+}
+
+.goodsOwner {
+  color: #0000005e;
+  text-shadow: 0 0 2px #0000003d;
+}
+
+/* 购买数量加减按钮 */
+/* ==================== */
+/*主容器*/
+.stepper {
+  width: 80px;
+  height: 26px;
+  /*给主容器设一个边框*/
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  /* margin:0 auto;*/
+  float: right;
+
+}
+
+/*加号和减号*/
+.stepper text {
+  width: 19px;
+  line-height: 26px;
+  text-align: center;
+  float: left;
+}
+
+/*数值*/
+.stepper input {
+  width: 40px;
+  height: 26px;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+  /*给中间的input设置左右边框即可*/
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+/*普通样式*/
+.stepper .normal {
+  color: black;
+}
+
+/*禁用样式*/
+.stepper .disabled {
+  color: #ccc;
+}
+
+/* =================== */
+
+.goodsDiscriptionBox {
+  /* width: 50%; */
+  width: 446rpx;
+
+  /* display: flex; */
+}
+
+/* 字体封装 */
+@font-face {
+  font-family: "blod";
+  src: url('https://static.heytea.com/taro_trial/v1/font/WenYue-XinQingNianTi-NC-W8_1.otf');
+}
+
+/* END */
+
+.topBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+
+  font-family: 'blod';
+  /* font-size: 65rpx; */
+  padding-top: 20rpx;
+}
+
+.buyBtn {
+  float: right;
+  background-color: #ffff33;
+  color: rgb(255, 79, 211);
+  margin-right: 40rpx;
+  margin-bottom: 30rpx;
+}
+
+.title {
+  margin-left: 40rpx;
+  font-weight: 800;
+  font-size: 55rpx;
+  margin-top: 20rpx;
+}
+
+.bar{
+  height: 20rpx;
+}
+
+.historyList {
+  margin-top: 120rpx;
+}
+
+.goodsBox {
+  margin-top: 20rpx;
+  background-color: white;
+  border-radius: 15px;
+  width: 95%;
+  margin-left: 2.5%;
+}
+

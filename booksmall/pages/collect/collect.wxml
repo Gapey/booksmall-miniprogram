@@ -1,0 +1,29 @@
+<view class="all">
+  <view class="topBar">
+    <text class="title">我卖的东西</text>
+    <!-- <button class="buyBtn" size="mini">结算</button> -->
+  </view>
+  <view class="bar"></view>
+  <view class="goodsList">
+    <view class="goodsBox" wx:for="{{list}}">
+      <view class="goods" bindtap="rankToSongList">
+        <image class="goodsPicture" src="http://119.29.28.23:8888/img?img={{item.pic}}" mode="scaleToFill"></image>
+        <view class="goodsDiscriptionBox">
+          <text class="goodsDiscription">商品名称: {{item.name}}</text>
+          <text class="goodsPrice">¥{{item.price}}</text>
+          <text class="goodsOwner">
+            商品描述:{{item.text}}</text>
+          <view class="btnBox" wx:if="{{item.state!=2}}">
+            <button class="updateBtn" size="mini" bindtap="update" data-goodid="{{item.id}}">修改</button>
+            <view class="addBtnBox" wx:if="{{item.state==1}}">
+              <button class="deleteBtn" size="mini" bindtap="goodsup" data-goodid="{{item.id}}">上架</button>
+            </view>
+            <view class="deleteBtnBox" wx:else>
+              <button class="deleteBtn" size="mini" bindtap="delete" data-goodid="{{item.id}}">下架</button>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

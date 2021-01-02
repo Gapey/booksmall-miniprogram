@@ -1,0 +1,45 @@
+<view class="user">
+  <view class="user_simpleInfo">
+    <image class="user_photo" src="{{head}}"></image>
+    <view class="userText">
+      <view class="user_nickName">{{name}}
+        <view class="infoBtn">></view>
+      </view>
+    </view>
+  </view>
+  <view class="myInfo">
+    <view class="infoTitle">个人信息修改</view>
+
+    <view class="sno">
+      <view class="infoText">昵称:</view>
+      <input type="text" class="input" value="{{name}}" bindinput="inputname"/>
+    </view>
+    <view class="sno">
+      <view class="infoText">性别:</view>
+      <input type="text" class="input" value="{{sex}}" bindinput="inputsex"/>
+    </view>
+    <view class="sno">
+      <view class="infoText">城市:</view>
+      <input type="text" class="input" value="{{city}}" bindinput="inputbirthday"/>
+    </view>
+    <view class="sno">
+      <view class="infoText">电话:</view>
+      <input type="text" class="input" value="{{phone}}" bindinput="inputphone"/>
+    </view>
+  </view>
+  <button class="updateBtn" size="mini" bindtap="confirmUpdate">确认修改</button>
+  <!-- <view class="recentPlay">最近播放
+    <scroll-view scroll-y>
+      <view class="scroll-item-y">第一个</view>
+      <view class="scroll-item-y">第二个</view>
+      <view class="scroll-item-y">第三个</view>
+    </scroll-view>
+  </view>
+  <view class="collectList">收藏歌单
+    <scroll-view scroll-y>
+      <view class="scroll-item-y">第一个</view>
+      <view class="scroll-item-y">第二个</view>
+      <view class="scroll-item-y">第三个</view>
+    </scroll-view>
+  </view> -->
+</view>
