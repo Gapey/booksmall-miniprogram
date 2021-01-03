@@ -74,7 +74,6 @@
 ### 项目结构
 
 ```
-├─ README.md
 ├─ booksmall
 │    ├─ app.js
 │    ├─ app.json
