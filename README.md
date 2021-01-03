@@ -74,7 +74,6 @@
 ### 项目结构
 
 ```
-imis-booksmall-miniprogram
 ├─ README.md
 ├─ booksmall
 │    ├─ app.js
