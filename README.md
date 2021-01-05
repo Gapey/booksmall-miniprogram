@@ -56,9 +56,9 @@
     ```
     source mall.sql
     ```
-    安装依赖包
-    
     修改mall.js中/img接口路径为自己uploads的绝对路径。
+    
+    安装依赖包
     ```
     npm install
     ```
