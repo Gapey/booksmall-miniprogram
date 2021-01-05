@@ -57,6 +57,7 @@
     source mall.sql
     ```
     安装依赖包
+    修改mall.js中/img接口路径为自己uploads的绝对路径。
     ```
     npm install
     ```
@@ -65,8 +66,6 @@
     node mall.js
     ```
     服务器使用8888端口
-
-3. 修改mall.js中/img接口路径为自己uploads的绝对路径。
 
 4. 请在https://mp.weixin.qq.com/ 得到appid和secret，微信开发者工具中设置appid。
   在mine.js中设置好appid和secret。
